@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--<meta http-equiv="refresh" content="10"/>-->
+		<title>Générateur de citations</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet"> 
+	</head>
+
+	<body>
+		<header>
+			<h1 id="titrePrincipal">Le . générateur . de . citations</h1>
+			<h2>Découvre des citations plus farfelues les unes que les autres!</h2>
+		</header>
+		
+		<div id="choixTheme">
+			<label>Quel thème de citations voulez-vous voir?</label><br/>
+			<button id="citationsAnimaux" class="btn btnTypeCitation" type="submit" role="button">Sur les animaux</button>
+			<button id="citationsSuperheros" class="btn btnTypeCitation" type="submit" role="button">Sur les super-héros Marvel</button>
+		</div>
+
+		<div id="choixNombre">
+			<label>Combien de citations voulez-vous générer?</label><br/>
+			<button class="btn btnNbCitations" role="button">1</button>
+			<button class="btn btnNbCitations" role="button">2</button>
+			<button class="btn btnNbCitations" role="button">3</button>
+			<button class="btn btnNbCitations" role="button">4</button>
+			<button class="btn btnNbCitations" role="button">5</button>
+		</div>
+
+		<div id="emplacementCitation"></div>
+
+		<br/>
+		<div id="rejouerArreter">
+			<button id="rejouer" class="btn btnFin" role="button">Générer de nouvelles citations</button>
+			<button id="arreter" class="btn btnFin" role="button">Arrêter</button>
+		</div>
+
+		<!-- Intégration de Bootstrap, JS & jQuery-->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="generateur.js"></script>
+	</body>
+</html>
